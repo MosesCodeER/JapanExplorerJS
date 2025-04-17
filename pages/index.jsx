@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { useAuth } from '../components/auth/AuthContext';
-import Header from '../Header';
-import Footer from '../Footer';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import ActivityCard from '../activities/ActivityCard';
 import FlightSearchForm from '../flights/FlightSearchForm';
 
