@@ -7,7 +7,7 @@ import { Eye, EyeOff } from 'lucide-react';
   onSubmit: (data) => void;
 }
 
-const AuthForm = ({ type, onSubmit }: AuthFormProps) => {
+const AuthForm = ({ type, onSubmit }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
