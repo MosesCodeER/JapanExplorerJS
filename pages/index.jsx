@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useAuth } from '../auth/AuthContext';
+import { useAuth } from '../components/auth/AuthContext';
 import Header from '../Header';
 import Footer from '../Footer';
 import ActivityCard from '../activities/ActivityCard';
