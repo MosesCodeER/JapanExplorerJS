@@ -10,7 +10,7 @@ const LoginPage = () => {
   const [loading, setLoading] = useState(false);
 
 const handleSubmit = async (data) => {
-  const { name, email, password } = data;
+  const { email, password } = data;
     try {
       setLoading(true);
       setError('');
