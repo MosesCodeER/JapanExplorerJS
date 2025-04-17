@@ -9,7 +9,8 @@ const RegisterPage = () => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (data: { name; email; password }) => {
+const handleSubmit = async (data) => {
+  const { email, password } = data;
     try {
       setLoading(true);
       setError('');
