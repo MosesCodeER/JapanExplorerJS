@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { useAuth } from './AuthContext';
-import AuthForm from './AuthForm';
+import { useAuth } from '../../components/auth/AuthContext';
+import AuthForm from '../../components/auth/AuthForm';
 
 const LoginPage = () => {
   const { login } = useAuth();
