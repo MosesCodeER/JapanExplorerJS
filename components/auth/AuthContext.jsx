@@ -1,18 +1,15 @@
 'use client';
 
-import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
 
-  id;
-  name;
-  email;
-}
+const AuthContext = createContext({
+  user: null,
+  loading: false,
+  login: async () => {},
+  register: async () => {},
+  logout: () => {},
+});
 
-  user: User | null;
-  loading;
-  login: (email, password) => Promise<void>;
-  register: (name, email, password) => Promise<void>;
-  logout: () => void;
-}
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
